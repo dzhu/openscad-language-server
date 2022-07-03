@@ -37,6 +37,12 @@ To install the server from crates.io_ (puts the binary into
 
    cargo install openscad-language-server
 
+To install from the `Arch user repository <aur_>`_ use a command as such or with ``yay`` etc.:
+
+.. code:: sh
+
+   paru -Sy openscad-language-server
+
 To build directly from the repository (puts the binary into
 ``target/release/openscad-language-server`` in the clone):
 
@@ -76,6 +82,8 @@ quite quickly and stay focused on the interesting parts in the middle.
    Text)
 -  https://github.com/Maxattax97/openscad-lsp (only a skeleton, no
    functionality)
+
+.. _aur: https://aur.archlinux.org/packages/openscad-language-server
 
 .. _clients: https://langserver.org/#implementations-client
 
