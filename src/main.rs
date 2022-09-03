@@ -32,12 +32,12 @@ const KEYWORDS: &[(&str, &str)] = &[
     ("for", "for (${1:LOOP}) {\n  $0\n}"),
     ("function", "function ${1:NAME}(${2:ARGS}) = $0;"),
     ("if", "if (${1:COND}) {\n  $0\n}"),
-    ("include", "include <${1:PATH}>;$0"),
+    ("include", "include <${1:PATH}>$0"),
     ("intersection_for", "intersection_for(${1:LOOP}) {\n  $0\n}"),
     ("let", "let (${1:VARS}) $0"),
     ("module", "module ${1:NAME}(${2:ARGS}) {\n  $0\n}"),
     ("true", "true"),
-    ("use", "use <${1:PATH}>;$0"),
+    ("use", "use <${1:PATH}>$0"),
 ];
 
 fn find_offset(text: &str, pos: Position) -> Option<usize> {
